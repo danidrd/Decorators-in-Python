@@ -14,7 +14,7 @@ The `type_check` decorator checks the types of the formal parameters and the ret
 
 ### `bb_type_check`
 
-The `bb_type_check` decorator is a decorator factory that accepts an argument and returns a decorator. This decorator performs bounded-blocking type checking of the formal parameters and the return type against the actual parameters and return type. If the types do not match, the function call is blocked a specified number of times before allowing it to proceed.
+The `bb_type_check` decorator is a decorator factory that accepts an argument, that is the number that the function could be blocked after type mismatching, and returns a decorator. This decorator performs bounded-blocking type checking of the formal parameters and the return type against the actual parameters and return type. If the types do not match, the function call is blocked a specified number of times before allowing it to proceed.
 
 ## Tests
 
